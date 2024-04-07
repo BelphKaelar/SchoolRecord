@@ -1,0 +1,94 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\App\\High-School-Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAB3979-8DE2-4DF3-8F02-18D1194A7043}|High school management\\High school management.csproj|d:\\app\\high-school-management\\high school management\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAB3979-8DE2-4DF3-8F02-18D1194A7043}|High school management\\High school management.csproj|solutionrelative:high school management\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAB3979-8DE2-4DF3-8F02-18D1194A7043}|High school management\\High school management.csproj|D:\\App\\High-School-Management\\high school management\\fault.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCAB3979-8DE2-4DF3-8F02-18D1194A7043}|High school management\\High school management.csproj|solutionrelative:high school management\\fault.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAB3979-8DE2-4DF3-8F02-18D1194A7043}|High school management\\High school management.csproj|D:\\App\\High-School-Management\\high school management\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCAB3979-8DE2-4DF3-8F02-18D1194A7043}|High school management\\High school management.csproj|solutionrelative:high school management\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAB3979-8DE2-4DF3-8F02-18D1194A7043}|High school management\\High school management.csproj|D:\\App\\High-School-Management\\high school management\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCAB3979-8DE2-4DF3-8F02-18D1194A7043}|High school management\\High school management.csproj|solutionrelative:high school management\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fault.cs [Design]",
+              "DocumentMoniker": "D:\\App\\High-School-Management\\High school management\\Fault.cs",
+              "RelativeDocumentMoniker": "High school management\\Fault.cs",
+              "ToolTip": "D:\\App\\High-School-Management\\High school management\\Fault.cs [Design]",
+              "RelativeToolTip": "High school management\\Fault.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T08:17:20.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\App\\High-School-Management\\High school management\\Form1.cs",
+              "RelativeDocumentMoniker": "High school management\\Form1.cs",
+              "ToolTip": "D:\\App\\High-School-Management\\High school management\\Form1.cs",
+              "RelativeToolTip": "High school management\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T08:02:17.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "D:\\App\\High-School-Management\\High school management\\Menu.cs",
+              "RelativeDocumentMoniker": "High school management\\Menu.cs",
+              "ToolTip": "D:\\App\\High-School-Management\\High school management\\Menu.cs [Design]",
+              "RelativeToolTip": "High school management\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T07:52:31.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\App\\High-School-Management\\High school management\\Form1.cs",
+              "RelativeDocumentMoniker": "High school management\\Form1.cs",
+              "ToolTip": "D:\\App\\High-School-Management\\High school management\\Form1.cs [Design]",
+              "RelativeToolTip": "High school management\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T07:31:27.416Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

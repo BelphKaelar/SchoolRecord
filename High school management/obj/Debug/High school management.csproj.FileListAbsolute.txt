@@ -1,0 +1,14 @@
+D:\App\High-School-Management\High school management\bin\Debug\Login.mdf
+D:\App\High-School-Management\High school management\bin\Debug\Login_log.ldf
+D:\App\High-School-Management\High school management\bin\Debug\High school management.exe.config
+D:\App\High-School-Management\High school management\bin\Debug\High school management.exe
+D:\App\High-School-Management\High school management\bin\Debug\High school management.pdb
+D:\App\High-School-Management\High school management\obj\Debug\High school management.csproj.AssemblyReference.cache
+D:\App\High-School-Management\High school management\obj\Debug\High_school_management.Login.resources
+D:\App\High-School-Management\High school management\obj\Debug\High_school_management.Menu.resources
+D:\App\High-School-Management\High school management\obj\Debug\High_school_management.Properties.Resources.resources
+D:\App\High-School-Management\High school management\obj\Debug\High school management.csproj.GenerateResource.cache
+D:\App\High-School-Management\High school management\obj\Debug\High school management.csproj.CoreCompileInputs.cache
+D:\App\High-School-Management\High school management\obj\Debug\High school management.exe
+D:\App\High-School-Management\High school management\obj\Debug\High school management.pdb
+D:\App\High-School-Management\High school management\obj\Debug\High_school_management.Fault.resources
