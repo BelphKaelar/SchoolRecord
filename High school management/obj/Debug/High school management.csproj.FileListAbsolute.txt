@@ -12,3 +12,14 @@ D:\App\High-School-Management\High school management\obj\Debug\High school manag
 D:\App\High-School-Management\High school management\obj\Debug\High school management.exe
 D:\App\High-School-Management\High school management\obj\Debug\High school management.pdb
 D:\App\High-School-Management\High school management\obj\Debug\High_school_management.Fault.resources
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High school management.csproj.AssemblyReference.cache
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High_school_management.Fault.resources
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High_school_management.Login.resources
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High_school_management.TeacherScore.resources
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High_school_management.Menu.resources
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High_school_management.Properties.Resources.resources
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High_school_management.TeacherScore.aa.resources
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High school management.csproj.GenerateResource.cache
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High school management.csproj.CoreCompileInputs.cache
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High school management.exe
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High school management.pdb
