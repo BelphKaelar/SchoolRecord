@@ -45,18 +45,19 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.DSDiem_Lb = new System.Windows.Forms.Label();
-            this.ApGridView1 = new System.Windows.Forms.DataGridView();
+            this.ScoreGridView = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.TenHS_Tbox = new System.Windows.Forms.TextBox();
+            this.FindBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ApGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ScoreGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -217,6 +218,7 @@
             this.label5.Size = new System.Drawing.Size(130, 28);
             this.label5.TabIndex = 18;
             this.label5.Text = "ĐĂNG XUẤT";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox7
             // 
@@ -252,15 +254,15 @@
             this.DSDiem_Lb.TabIndex = 8;
             this.DSDiem_Lb.Text = "Điểm";
             // 
-            // ApGridView1
+            // ScoreGridView
             // 
-            this.ApGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ApGridView1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ApGridView1.Location = new System.Drawing.Point(205, 184);
-            this.ApGridView1.Name = "ApGridView1";
-            this.ApGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ApGridView1.Size = new System.Drawing.Size(875, 377);
-            this.ApGridView1.TabIndex = 60;
+            this.ScoreGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ScoreGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ScoreGridView.Location = new System.Drawing.Point(205, 184);
+            this.ScoreGridView.Name = "ScoreGridView";
+            this.ScoreGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ScoreGridView.Size = new System.Drawing.Size(875, 389);
+            this.ScoreGridView.TabIndex = 60;
             // 
             // pictureBox1
             // 
@@ -272,10 +274,12 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.FindBtn);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.TenGV_Tbox);
             this.panel2.Controls.Add(this.label3);
@@ -283,7 +287,7 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.Lop_Cbox);
             this.panel2.Controls.Add(this.TenHS_Tbox);
-            this.panel2.Controls.Add(this.ApGridView1);
+            this.panel2.Controls.Add(this.ScoreGridView);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -305,12 +309,24 @@
             // 
             // TenHS_Tbox
             // 
-            this.TenHS_Tbox.Enabled = false;
             this.TenHS_Tbox.Location = new System.Drawing.Point(217, 152);
             this.TenHS_Tbox.Name = "TenHS_Tbox";
             this.TenHS_Tbox.Size = new System.Drawing.Size(258, 20);
             this.TenHS_Tbox.TabIndex = 61;
             this.TenHS_Tbox.Text = "Nhập tên HS";
+            // 
+            // FindBtn
+            // 
+            this.FindBtn.BackColor = System.Drawing.Color.Black;
+            this.FindBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.FindBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.FindBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.FindBtn.Location = new System.Drawing.Point(889, 134);
+            this.FindBtn.Name = "FindBtn";
+            this.FindBtn.Size = new System.Drawing.Size(104, 44);
+            this.FindBtn.TabIndex = 70;
+            this.FindBtn.Text = "Tìm Kiếm";
+            this.FindBtn.UseVisualStyleBackColor = false;
             // 
             // StudentScore
             // 
@@ -329,7 +345,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ApGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ScoreGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -354,10 +370,11 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label DSDiem_Lb;
-        private System.Windows.Forms.DataGridView ApGridView1;
+        private System.Windows.Forms.DataGridView ScoreGridView;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TenHS_Tbox;
+        private System.Windows.Forms.Button FindBtn;
     }
 }

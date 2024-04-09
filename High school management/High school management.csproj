@@ -69,23 +69,23 @@
     <Compile Include="Fault.Designer.cs">
       <DependentUpon>Fault.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="TeacherScore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TeacherScore.Designer.cs">
+      <DependentUpon>TeacherScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentScore.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudentScore.Designer.cs">
       <DependentUpon>StudentScore.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TeacherScore.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TeacherScore.Designer.cs">
-      <DependentUpon>TeacherScore.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -98,17 +98,14 @@
     <EmbeddedResource Include="Fault.resx">
       <DependentUpon>Fault.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="TeacherScore.resx">
+      <DependentUpon>TeacherScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentScore.resx">
       <DependentUpon>StudentScore.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TeacherScore.aa.resx">
-      <DependentUpon>TeacherScore.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TeacherScore.resx">
-      <DependentUpon>TeacherScore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

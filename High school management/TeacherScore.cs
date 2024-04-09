@@ -5,7 +5,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,12 +19,11 @@ namespace High_school_management
             if (Login.Role == "Teacher")
             {
                 DSDiem_Lb.Enabled = true;
-                Lich_Lb.Enabled = false;
+                Lich_Lb.Enabled = true;
                 DSHS_Lb.Enabled = true;
-                Appoint_Lb.Enabled = true;
             }
             GetLopID(); 
-            DisplayStudentScore(); ApGridView1.ClearSelection();
+            DisplayStudentScore(); ScoreGridView.ClearSelection();
         }
 
         int key = 0;
@@ -33,12 +31,12 @@ namespace High_school_management
 
         private void DisplayStudentScore()
         {
-            string Query = "Select * from StudentScoreTb";
+            string Query = "SELECT MaDiem, TenHS, MaLop, TenGV, DiemMieng, Diem15p, Diem1Tiet, DiemGK, DiemCK FROM StudentScore";
             SqlDataAdapter SDA = new SqlDataAdapter(Query, Con);
             SqlCommandBuilder builder = new SqlCommandBuilder(SDA);
             var ds = new DataSet();
             SDA.Fill(ds);
-            ApGridView1.DataSource = ds.Tables[0];
+            ScoreGridView.DataSource = ds.Tables[0];
             Con.Close();
         }
 
@@ -53,35 +51,19 @@ namespace High_school_management
         private void GetLopID()
         {
             Con.Open();
-            SqlCommand cmd = new SqlCommand("Select MaLop from LopHoc", Con);
+            SqlCommand cmd = new SqlCommand("Select MaLop from ClassTb", Con);
             SqlDataReader dr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
-            dt.Columns.Add("DocID", typeof(int));
+            dt.Columns.Add("MaLop", typeof(int));
             dt.Load(dr);
             Lop_Cbox.ValueMember = "MaLop";
             Lop_Cbox.DataSource = dt;
             Con.Close();
         }
 
-
-        private void AddBtn_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void DSDiem_Lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Lich_Lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DSHS_Lb_Click(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -90,25 +72,66 @@ namespace High_school_management
             obj.Show();
             this.Hide();
         }
-
-        private void ApGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void ScoreGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (ApGridView1.SelectedRows.Count > 0)
+            if (ScoreGridView.SelectedRows.Count > 0)
             {
-                DiemMieng_Tbox.Text = ApGridView1.SelectedRows[0].Cells[8].Value.ToString();
-                Diem15p_Tbox.Text = ApGridView1.SelectedRows[0].Cells[9].Value.ToString();
-                Diem1Tiet_Tbox.Text = ApGridView1.SelectedRows[0].Cells[10].Value.ToString();
-                DiemGK_Tbox.Text = ApGridView1.SelectedRows[0].Cells[11].Value.ToString();
-                DiemCK_Tbox.Text = ApGridView1.SelectedRows[0].Cells[12].Value.ToString();
+                DiemMieng_Tbox.Text = ScoreGridView.SelectedRows[0].Cells[5].Value.ToString();
+                Diem15p_Tbox.Text = ScoreGridView.SelectedRows[0].Cells[6].Value.ToString();
+                Diem1Tiet_Tbox.Text = ScoreGridView.SelectedRows[0].Cells[7].Value.ToString();
+                DiemGK_Tbox.Text = ScoreGridView.SelectedRows[0].Cells[8].Value.ToString();
+                DiemCK_Tbox.Text = ScoreGridView.SelectedRows[0].Cells[9].Value.ToString();
                 if (TenHS_Tbox.Text == string.Empty || TenGV_Tbox.Text == string.Empty) { key = 0; }
-                else { key = Convert.ToInt32(ApGridView1.SelectedRows[0].Cells[0].Value.ToString()); }
+                else { key = Convert.ToInt32(ScoreGridView.SelectedRows[0].Cells[0].Value.ToString()); }
             }
             else { MessageBox.Show("Hãy chọn học sinh muốn thay đổi."); }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void TenHS_Tbox_TextChanged(object sender, EventArgs e)
         {
-            Application.Exit();
+            string searchTerm = TenHS_Tbox.Text.Trim();
+            string query = "SELECT * FROM StudentScore";
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query += " WHERE TenHS LIKE '%" + searchTerm + "%'";
+                // Thay 'StudentName' bằng tên cột bạn muốn tìm kiếm
+            }
+
+            SqlDataAdapter SDA = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(SDA);
+            var ds = new DataSet();
+            SDA.Fill(ds);
+            ScoreGridView.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (DiemMieng_Tbox.Text == "" || Diem15p_Tbox.Text == "" || Diem1Tiet_Tbox.Text == "" ||  DiemGK_Tbox.Text == "" || DiemCK_Tbox.Text == "" )
+            {
+                MessageBox.Show("Xin hãy nhập điểm vào trước khi thay đổi!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("Update StudentScore set DiemMieng=@DM, Diem15p=@D15, Diem1Tiet=@D1T, DiemGK=@DGK, DiemCK=@DCK where MaDiem=@MD", Con);
+                    cmd.Parameters.AddWithValue("@DM", DiemMieng_Tbox.Text);
+                    cmd.Parameters.AddWithValue("@D15", Diem15p_Tbox.Text);
+                    cmd.Parameters.AddWithValue("@D1T", Diem1Tiet_Tbox.Text);
+                    cmd.Parameters.AddWithValue("@DGK", DiemGK_Tbox.Text);
+                    cmd.Parameters.AddWithValue("@DCK", DiemCK_Tbox.Text);
+                    cmd.Parameters.AddWithValue("@MD", key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Score Edited");
+                    Con.Close();
+                    DisplayStudentScore();
+                    Clear();
+                }
+                catch (Exception Ex) { MessageBox.Show(Ex.Message); }
+            }
         }
     }
 }
