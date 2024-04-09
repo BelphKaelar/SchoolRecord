@@ -48,36 +48,19 @@ namespace High_school_management
             string username, user_password;
             username = User_Tbox.Text;
             user_password = Pass_Tbox.Text;
-            try
+            if (username == username_student)
             {
-                if (username == username_student)
-                {
-                    Role = "Student";
-                    StudentScore obj = new StudentScore();
-                    obj.Show();
-                    this.Hide();
-                }
-                else
-                if (username == username_teacher)
-                {
-                    Role = "Teacher";
-                    TeacherScore obj = new TeacherScore();
-                    obj.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Login Fault");
-                }
+                Role = "Student";
+                Menu obj = new Menu();
+                obj.Show();
+                this.Hide();
             }
-            catch
-            {
-                MessageBox.Show("Error Login");
-            }
-            finally
-            {
-
-            }
+            else if (username == username_teacher){
+                Role = "Teacher";
+                Menu obj = new Menu();
+                obj.Show();
+                this.Hide();
+            }else { MessageBox.Show("Tên đăng nhập hoặc mật khẩu không khả dụng!"); }
         }
     }
 }

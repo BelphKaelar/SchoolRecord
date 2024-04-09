@@ -76,7 +76,6 @@
             // 
             // TenGV_Tbox
             // 
-            this.TenGV_Tbox.Enabled = false;
             this.TenGV_Tbox.Location = new System.Drawing.Point(625, 150);
             this.TenGV_Tbox.Name = "TenGV_Tbox";
             this.TenGV_Tbox.Size = new System.Drawing.Size(258, 20);
@@ -313,7 +312,6 @@
             this.TenHS_Tbox.Name = "TenHS_Tbox";
             this.TenHS_Tbox.Size = new System.Drawing.Size(258, 20);
             this.TenHS_Tbox.TabIndex = 61;
-            this.TenHS_Tbox.Text = "Nhập tên HS";
             // 
             // FindBtn
             // 
@@ -327,6 +325,7 @@
             this.FindBtn.TabIndex = 70;
             this.FindBtn.Text = "Tìm Kiếm";
             this.FindBtn.UseVisualStyleBackColor = false;
+            this.FindBtn.Click += new System.EventHandler(this.FindBtn_Click);
             // 
             // StudentScore
             // 

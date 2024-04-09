@@ -28,3 +28,4 @@ C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\bin\
 C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\bin\Debug\High school management.exe
 C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\bin\Debug\High school management.pdb
 C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High_school_management.StudentScore.resources
+C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\obj\Debug\High_school_management.Schedule.resources

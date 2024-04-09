@@ -167,6 +167,7 @@
             this.FindBtn.TabIndex = 42;
             this.FindBtn.Text = "Tìm Kiếm";
             this.FindBtn.UseVisualStyleBackColor = false;
+            this.FindBtn.Click += new System.EventHandler(this.FindBtn_Click);
             // 
             // pictureBox2
             // 

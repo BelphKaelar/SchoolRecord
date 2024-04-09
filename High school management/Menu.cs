@@ -15,6 +15,13 @@ namespace High_school_management
         public Menu()
         {
             InitializeComponent();
+            if (Login.Role == "Student")
+            {
+                DSDiem_Lb.Enabled = true;
+                Lich_Lb.Enabled = true;
+                DSHS_Lb.Enabled = false;
+            }
+            timer1.Start();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -27,6 +34,11 @@ namespace High_school_management
             Login obj = new Login();
             obj.Show();
             this.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.label3.Text = DateTime.Now.ToString();
         }
     }
 }

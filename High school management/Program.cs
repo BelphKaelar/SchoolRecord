@@ -16,7 +16,7 @@ namespace High_school_management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TeacherScore());
+            Application.Run(new Menu());
         }
     }
 }

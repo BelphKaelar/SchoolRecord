@@ -133,5 +133,44 @@ namespace High_school_management
                 catch (Exception Ex) { MessageBox.Show(Ex.Message); }
             }
         }
+
+        private void FindBtn_Click(object sender, EventArgs e)
+        {
+            string searchTerm1 = TenHS_Tbox.Text.Trim();
+            string searchTerm2 = TenGV_Tbox.Text.Trim();
+            string searchCondition = Lop_Cbox.SelectedItem?.ToString(); // Handle null selection
+
+            if (!string.IsNullOrEmpty(searchTerm1) && !string.IsNullOrEmpty(searchTerm2))
+            {
+                string query = "SELECT MaDiem, TenHS, MaLop, TenGV, DiemMieng, Diem15p, Diem1Tiet, DiemGK, DiemCK " +
+                               "FROM StudentScore WHERE TenHS = @TenHS AND TenGV = @TenGV";
+
+                if (!string.IsNullOrEmpty(searchCondition))
+                {
+                    query += " AND MaLop LIKE '%@MaLop%'";
+                }
+
+                Con.Open();
+                SqlCommand command = new SqlCommand(query, Con);
+                command.Parameters.AddWithValue("@TenHS", searchTerm1);
+                command.Parameters.AddWithValue("@TenGV", searchTerm2);
+
+                if (!string.IsNullOrEmpty(searchCondition))
+                {
+                    command.Parameters.AddWithValue("@MaLop", searchCondition);
+                }
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+
+                ScoreGridView.DataSource = dataTable;
+                Con.Close(); Clear();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập giá trị cho cả hai ô tìm kiếm.");
+            }
+        }
     }
 }
