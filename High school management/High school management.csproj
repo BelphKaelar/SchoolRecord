@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classdatabase.cs" />
     <Compile Include="Fault.cs">
       <SubType>Form</SubType>
     </Compile>

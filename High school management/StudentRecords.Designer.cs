@@ -157,6 +157,7 @@
             this.label5.Size = new System.Drawing.Size(130, 28);
             this.label5.TabIndex = 18;
             this.label5.Text = "ĐĂNG XUẤT";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox7
             // 
@@ -191,6 +192,7 @@
             this.txtthemhs.Size = new System.Drawing.Size(150, 28);
             this.txtthemhs.TabIndex = 8;
             this.txtthemhs.Text = "Thêm học sinh";
+            this.txtthemhs.Click += new System.EventHandler(this.txtthemhs_Click);
             // 
             // panel1
             // 
