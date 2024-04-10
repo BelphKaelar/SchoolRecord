@@ -48,9 +48,9 @@
             this.ScoreGridView = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.FindBtn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.TenHS_Tbox = new System.Windows.Forms.TextBox();
-            this.FindBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -128,6 +128,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel1
             // 
@@ -205,6 +206,7 @@
             this.Lich_Lb.Size = new System.Drawing.Size(50, 28);
             this.Lich_Lb.TabIndex = 19;
             this.Lich_Lb.Text = "Lịch";
+            this.Lich_Lb.Click += new System.EventHandler(this.Lich_Lb_Click);
             // 
             // label5
             // 
@@ -294,6 +296,20 @@
             this.panel2.Size = new System.Drawing.Size(1092, 585);
             this.panel2.TabIndex = 9;
             // 
+            // FindBtn
+            // 
+            this.FindBtn.BackColor = System.Drawing.Color.Black;
+            this.FindBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.FindBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.FindBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.FindBtn.Location = new System.Drawing.Point(889, 134);
+            this.FindBtn.Name = "FindBtn";
+            this.FindBtn.Size = new System.Drawing.Size(104, 44);
+            this.FindBtn.TabIndex = 70;
+            this.FindBtn.Text = "Tìm Kiếm";
+            this.FindBtn.UseVisualStyleBackColor = false;
+            this.FindBtn.Click += new System.EventHandler(this.FindBtn_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -312,20 +328,6 @@
             this.TenHS_Tbox.Name = "TenHS_Tbox";
             this.TenHS_Tbox.Size = new System.Drawing.Size(258, 20);
             this.TenHS_Tbox.TabIndex = 61;
-            // 
-            // FindBtn
-            // 
-            this.FindBtn.BackColor = System.Drawing.Color.Black;
-            this.FindBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.FindBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FindBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.FindBtn.Location = new System.Drawing.Point(889, 134);
-            this.FindBtn.Name = "FindBtn";
-            this.FindBtn.Size = new System.Drawing.Size(104, 44);
-            this.FindBtn.TabIndex = 70;
-            this.FindBtn.Text = "Tìm Kiếm";
-            this.FindBtn.UseVisualStyleBackColor = false;
-            this.FindBtn.Click += new System.EventHandler(this.FindBtn_Click);
             // 
             // StudentScore
             // 

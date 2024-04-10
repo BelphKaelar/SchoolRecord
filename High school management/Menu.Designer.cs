@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,7 +46,6 @@
             this.DSDiem_Lb = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -67,6 +67,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(892, 585);
             this.panel2.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Gold;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(6, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(253, 54);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "HELLO USER";
             // 
             // label2
             // 
@@ -134,6 +146,7 @@
             this.DSHS_Lb.Size = new System.Drawing.Size(96, 28);
             this.DSHS_Lb.TabIndex = 22;
             this.DSHS_Lb.Text = "Học Sinh";
+            this.DSHS_Lb.Click += new System.EventHandler(this.DSHS_Lb_Click);
             // 
             // pictureBox4
             // 
@@ -168,6 +181,7 @@
             this.Lich_Lb.Size = new System.Drawing.Size(50, 28);
             this.Lich_Lb.TabIndex = 19;
             this.Lich_Lb.Text = "Lịch";
+            this.Lich_Lb.Click += new System.EventHandler(this.Lich_Lb_Click);
             // 
             // label5
             // 
@@ -215,6 +229,7 @@
             this.DSDiem_Lb.Size = new System.Drawing.Size(62, 28);
             this.DSDiem_Lb.TabIndex = 8;
             this.DSDiem_Lb.Text = "Điểm";
+            this.DSDiem_Lb.Click += new System.EventHandler(this.DSDiem_Lb_Click);
             // 
             // pictureBox2
             // 
@@ -230,18 +245,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(6, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(253, 54);
-            this.label3.TabIndex = 67;
-            this.label3.Text = "HELLO USER";
             // 
             // Menu
             // 

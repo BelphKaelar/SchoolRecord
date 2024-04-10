@@ -27,7 +27,7 @@ namespace High_school_management
         }
 
         int key = 0;
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\SchoolRecord.mdf"";Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\School ahh Record.mdf"";Integrated Security=True");
 
         private void DisplayStudentScore()
         {
@@ -171,6 +171,20 @@ namespace High_school_management
             {
                 MessageBox.Show("Vui lòng nhập giá trị cho cả hai ô tìm kiếm.");
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Menu obj = new Menu();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Lich_Lb_Click(object sender, EventArgs e)
+        {
+            Schedule obj = new Schedule();
+            obj.Show();
+            this.Hide();
         }
     }
 }

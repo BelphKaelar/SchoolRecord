@@ -21,7 +21,7 @@ namespace High_school_management
             {
                 DSDiem_Lb.Enabled = true;
                 Lich_Lb.Enabled = true;
-                DSHS_Lb.Enabled = true;
+                DSHS_Lb.Enabled = false;
             }
             GetLopID();
             DisplayStudentScore(); ScoreGridView.ClearSelection();
@@ -109,5 +109,18 @@ namespace High_school_management
             }
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Menu obj = new Menu();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Lich_Lb_Click(object sender, EventArgs e)
+        {
+            Schedule obj = new Schedule();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

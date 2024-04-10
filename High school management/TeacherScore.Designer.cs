@@ -54,9 +54,9 @@
             this.ScoreGridView = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.DiemCK_Tbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TenHS_Tbox = new System.Windows.Forms.TextBox();
-            this.DiemCK_Tbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -179,6 +179,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label2
             // 
@@ -268,6 +269,7 @@
             this.Lich_Lb.Size = new System.Drawing.Size(50, 28);
             this.Lich_Lb.TabIndex = 19;
             this.Lich_Lb.Text = "Lịch";
+            this.Lich_Lb.Click += new System.EventHandler(this.Lich_Lb_Click);
             // 
             // label5
             // 
@@ -364,6 +366,13 @@
             this.panel2.Size = new System.Drawing.Size(1092, 585);
             this.panel2.TabIndex = 9;
             // 
+            // DiemCK_Tbox
+            // 
+            this.DiemCK_Tbox.Location = new System.Drawing.Point(887, 462);
+            this.DiemCK_Tbox.Name = "DiemCK_Tbox";
+            this.DiemCK_Tbox.Size = new System.Drawing.Size(139, 20);
+            this.DiemCK_Tbox.TabIndex = 74;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -382,13 +391,6 @@
             this.TenHS_Tbox.Name = "TenHS_Tbox";
             this.TenHS_Tbox.Size = new System.Drawing.Size(258, 20);
             this.TenHS_Tbox.TabIndex = 61;
-            // 
-            // DiemCK_Tbox
-            // 
-            this.DiemCK_Tbox.Location = new System.Drawing.Point(887, 462);
-            this.DiemCK_Tbox.Name = "DiemCK_Tbox";
-            this.DiemCK_Tbox.Size = new System.Drawing.Size(139, 20);
-            this.DiemCK_Tbox.TabIndex = 74;
             // 
             // TeacherScore
             // 

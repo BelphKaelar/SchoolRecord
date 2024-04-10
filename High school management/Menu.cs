@@ -40,5 +40,32 @@ namespace High_school_management
         {
             this.label3.Text = DateTime.Now.ToString();
         }
+
+        private void DSDiem_Lb_Click(object sender, EventArgs e)
+        {
+            if(Login.Role == "Student")
+            {
+                StudentScore obj = new StudentScore();
+                obj.Show();
+                this.Hide();
+            }else
+            {
+                TeacherScore obj = new TeacherScore();
+                obj.Show();
+                this.Hide();
+            }
+        }
+
+        private void Lich_Lb_Click(object sender, EventArgs e)
+        {
+            Schedule obj = new Schedule();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void DSHS_Lb_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
