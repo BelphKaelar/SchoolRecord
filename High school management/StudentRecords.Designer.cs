@@ -157,6 +157,7 @@
             this.label5.Size = new System.Drawing.Size(130, 28);
             this.label5.TabIndex = 18;
             this.label5.Text = "ĐĂNG XUẤT";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox7
             // 

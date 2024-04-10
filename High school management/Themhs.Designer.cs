@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Themhs));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,16 +38,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtmahs = new System.Windows.Forms.TextBox();
+            this.txtten = new System.Windows.Forms.TextBox();
+            this.txtsdt = new System.Windows.Forms.TextBox();
+            this.txtdiachi = new System.Windows.Forms.TextBox();
+            this.txttendn = new System.Windows.Forms.TextBox();
+            this.txtlop = new System.Windows.Forms.TextBox();
+            this.txtmk = new System.Windows.Forms.TextBox();
+            this.txtngaysinh = new System.Windows.Forms.DateTimePicker();
             this.btndangky = new System.Windows.Forms.Button();
             this.btntailai = new System.Windows.Forms.Button();
+            this.btnout = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnout)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -139,69 +142,69 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Mật Khẩu";
             // 
-            // textBox1
+            // txtmahs
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(32, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 29);
-            this.textBox1.TabIndex = 9;
+            this.txtmahs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmahs.Location = new System.Drawing.Point(32, 140);
+            this.txtmahs.Name = "txtmahs";
+            this.txtmahs.Size = new System.Drawing.Size(270, 29);
+            this.txtmahs.TabIndex = 9;
             // 
-            // textBox2
+            // txtten
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(33, 249);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 29);
-            this.textBox2.TabIndex = 10;
+            this.txtten.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtten.Location = new System.Drawing.Point(33, 249);
+            this.txtten.Name = "txtten";
+            this.txtten.Size = new System.Drawing.Size(270, 29);
+            this.txtten.TabIndex = 10;
             // 
-            // textBox3
+            // txtsdt
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(32, 473);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 29);
-            this.textBox3.TabIndex = 11;
+            this.txtsdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsdt.Location = new System.Drawing.Point(32, 473);
+            this.txtsdt.Name = "txtsdt";
+            this.txtsdt.Size = new System.Drawing.Size(211, 29);
+            this.txtsdt.TabIndex = 11;
             // 
-            // textBox4
+            // txtdiachi
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(403, 140);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(413, 29);
-            this.textBox4.TabIndex = 12;
+            this.txtdiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdiachi.Location = new System.Drawing.Point(403, 140);
+            this.txtdiachi.Name = "txtdiachi";
+            this.txtdiachi.Size = new System.Drawing.Size(413, 29);
+            this.txtdiachi.TabIndex = 12;
             // 
-            // textBox5
+            // txttendn
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(403, 249);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(222, 29);
-            this.textBox5.TabIndex = 13;
+            this.txttendn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttendn.Location = new System.Drawing.Point(403, 249);
+            this.txttendn.Name = "txttendn";
+            this.txttendn.Size = new System.Drawing.Size(222, 29);
+            this.txttendn.TabIndex = 13;
             // 
-            // textBox6
+            // txtlop
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(403, 347);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(222, 29);
-            this.textBox6.TabIndex = 14;
+            this.txtlop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlop.Location = new System.Drawing.Point(403, 347);
+            this.txtlop.Name = "txtlop";
+            this.txtlop.Size = new System.Drawing.Size(222, 29);
+            this.txtlop.TabIndex = 14;
             // 
-            // textBox7
+            // txtmk
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(654, 249);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(162, 29);
-            this.textBox7.TabIndex = 15;
+            this.txtmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmk.Location = new System.Drawing.Point(654, 249);
+            this.txtmk.Name = "txtmk";
+            this.txtmk.Size = new System.Drawing.Size(162, 29);
+            this.txtmk.TabIndex = 15;
             // 
-            // dateTimePicker1
+            // txtngaysinh
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(33, 356);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(269, 29);
-            this.dateTimePicker1.TabIndex = 16;
+            this.txtngaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtngaysinh.Location = new System.Drawing.Point(33, 356);
+            this.txtngaysinh.Name = "txtngaysinh";
+            this.txtngaysinh.Size = new System.Drawing.Size(269, 29);
+            this.txtngaysinh.TabIndex = 16;
             // 
             // btndangky
             // 
@@ -215,6 +218,7 @@
             this.btndangky.TabIndex = 43;
             this.btndangky.Text = "Đăng Ký";
             this.btndangky.UseVisualStyleBackColor = false;
+            this.btndangky.Click += new System.EventHandler(this.btndangky_Click);
             // 
             // btntailai
             // 
@@ -228,22 +232,36 @@
             this.btntailai.TabIndex = 44;
             this.btntailai.Text = "Tải Lại";
             this.btntailai.UseVisualStyleBackColor = false;
+            this.btntailai.Click += new System.EventHandler(this.btntailai_Click);
+            // 
+            // btnout
+            // 
+            this.btnout.Image = ((System.Drawing.Image)(resources.GetObject("btnout.Image")));
+            this.btnout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnout.Location = new System.Drawing.Point(880, 0);
+            this.btnout.Name = "btnout";
+            this.btnout.Size = new System.Drawing.Size(39, 27);
+            this.btnout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnout.TabIndex = 45;
+            this.btnout.TabStop = false;
+            this.btnout.Click += new System.EventHandler(this.btnout_Click);
             // 
             // Themhs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 567);
+            this.Controls.Add(this.btnout);
             this.Controls.Add(this.btntailai);
             this.Controls.Add(this.btndangky);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtngaysinh);
+            this.Controls.Add(this.txtmk);
+            this.Controls.Add(this.txtlop);
+            this.Controls.Add(this.txttendn);
+            this.Controls.Add(this.txtdiachi);
+            this.Controls.Add(this.txtsdt);
+            this.Controls.Add(this.txtten);
+            this.Controls.Add(this.txtmahs);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -256,6 +274,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Themhs";
             this.Text = "Themhs";
+            ((System.ComponentModel.ISupportInitialize)(this.btnout)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,15 +291,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtmahs;
+        private System.Windows.Forms.TextBox txtten;
+        private System.Windows.Forms.TextBox txtsdt;
+        private System.Windows.Forms.TextBox txtdiachi;
+        private System.Windows.Forms.TextBox txttendn;
+        private System.Windows.Forms.TextBox txtlop;
+        private System.Windows.Forms.TextBox txtmk;
+        private System.Windows.Forms.DateTimePicker txtngaysinh;
         private System.Windows.Forms.Button btndangky;
         private System.Windows.Forms.Button btntailai;
+        private System.Windows.Forms.PictureBox btnout;
     }
 }

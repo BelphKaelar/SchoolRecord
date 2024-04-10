@@ -26,7 +26,16 @@ namespace High_school_management
 
         private void txtthemhs_Click(object sender, EventArgs e)
         {
+            Themhs th  = new Themhs();
+            th.Show();
+            this.Hide();
+        }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Login ff = new Login();
+            ff.Show();
+            this.Hide();
         }
     }
 }
