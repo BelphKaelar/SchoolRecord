@@ -49,3 +49,15 @@ CREATE TABLE [dbo].[TeacherTimeTb]
     [CN] VARCHAR(50) NULL, 
     [Ngay] DATE NOT NULL
 )
+CREATE TABLE [dbo].[Studentscord] (
+    [MaHS]    INT          NOT NULL,
+    [TenHS]     VARCHAR (50)   NOT NULL,
+    [TenMon]    VARCHAR (50) NOT NULL,
+	[NgaySinh]      DATE        NOT NULL,
+    [DiaChi]    VARCHAR (50)  NOT NULL,
+	[TenDangNhap] VARCHAR (53)   NULL,
+    [MatKhau]   INT NOT NULL,
+    [Lop] VARCHAR (23)   NULL,
+    PRIMARY KEY CLUSTERED ([MaHS] ASC)
+);
+
