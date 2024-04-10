@@ -49,6 +49,7 @@ CREATE TABLE [dbo].[TeacherTimeTb]
     [CN] VARCHAR(50) NULL, 
     [Ngay] DATE NOT NULL
 )
+
 CREATE TABLE [dbo].[Studentscord] (
     [MaHS]    INT          NOT NULL,
     [TenHS]     VARCHAR (50)   NOT NULL,
