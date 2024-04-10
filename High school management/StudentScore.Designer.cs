@@ -73,6 +73,7 @@
             this.label4.Size = new System.Drawing.Size(77, 21);
             this.label4.TabIndex = 69;
             this.label4.Text = "Giáo Viên";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // TenGV_Tbox
             // 
@@ -80,6 +81,7 @@
             this.TenGV_Tbox.Name = "TenGV_Tbox";
             this.TenGV_Tbox.Size = new System.Drawing.Size(258, 20);
             this.TenGV_Tbox.TabIndex = 68;
+            this.TenGV_Tbox.TextChanged += new System.EventHandler(this.TenGV_Tbox_TextChanged);
             // 
             // label3
             // 
@@ -92,6 +94,7 @@
             this.label3.Size = new System.Drawing.Size(37, 21);
             this.label3.TabIndex = 67;
             this.label3.Text = "Lớp";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -104,6 +107,7 @@
             this.label2.Size = new System.Drawing.Size(250, 54);
             this.label2.TabIndex = 66;
             this.label2.Text = "BẢNG ĐIỂM";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Lop_Cbox
             // 
@@ -117,14 +121,15 @@
             this.Lop_Cbox.Size = new System.Drawing.Size(138, 21);
             this.Lop_Cbox.TabIndex = 62;
             this.Lop_Cbox.Text = "Chọn Lớp";
+            this.Lop_Cbox.SelectedIndexChanged += new System.EventHandler(this.Lop_Cbox_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(46, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(46, -7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(101, 100);
+            this.pictureBox2.Size = new System.Drawing.Size(101, 107);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -148,6 +153,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 585);
             this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -160,6 +166,7 @@
             this.label1.Size = new System.Drawing.Size(156, 28);
             this.label1.TabIndex = 25;
             this.label1.Text = "TRƯỜNG THPT";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // DSHS_Lb
             // 
@@ -172,28 +179,31 @@
             this.DSHS_Lb.Size = new System.Drawing.Size(96, 28);
             this.DSHS_Lb.TabIndex = 22;
             this.DSHS_Lb.Text = "Học Sinh";
+            this.DSHS_Lb.Click += new System.EventHandler(this.DSHS_Lb_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox4.Location = new System.Drawing.Point(5, 286);
+            this.pictureBox4.Location = new System.Drawing.Point(5, 279);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(51, 45);
+            this.pictureBox4.Size = new System.Drawing.Size(51, 52);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox5.Location = new System.Drawing.Point(5, 235);
+            this.pictureBox5.Location = new System.Drawing.Point(5, 228);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(51, 45);
+            this.pictureBox5.Size = new System.Drawing.Size(51, 52);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // Lich_Lb
             // 
@@ -225,23 +235,25 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 533);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 526);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(51, 45);
+            this.pictureBox7.Size = new System.Drawing.Size(51, 52);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 17;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox3.Location = new System.Drawing.Point(5, 184);
+            this.pictureBox3.Location = new System.Drawing.Point(5, 177);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 45);
+            this.pictureBox3.Size = new System.Drawing.Size(51, 52);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // DSDiem_Lb
             // 
@@ -254,24 +266,26 @@
             this.DSDiem_Lb.Size = new System.Drawing.Size(62, 28);
             this.DSDiem_Lb.TabIndex = 8;
             this.DSDiem_Lb.Text = "Điểm";
+            this.DSDiem_Lb.Click += new System.EventHandler(this.DSDiem_Lb_Click);
             // 
             // ScoreGridView
             // 
             this.ScoreGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ScoreGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ScoreGridView.Location = new System.Drawing.Point(205, 184);
+            this.ScoreGridView.Location = new System.Drawing.Point(205, 177);
             this.ScoreGridView.Name = "ScoreGridView";
             this.ScoreGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ScoreGridView.Size = new System.Drawing.Size(875, 389);
+            this.ScoreGridView.Size = new System.Drawing.Size(875, 396);
             this.ScoreGridView.TabIndex = 60;
+            this.ScoreGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ScoreGridView_CellContentClick);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(1041, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1041, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 27);
+            this.pictureBox1.Size = new System.Drawing.Size(39, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -295,6 +309,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1092, 585);
             this.panel2.TabIndex = 9;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // FindBtn
             // 
@@ -302,9 +317,9 @@
             this.FindBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.FindBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.FindBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.FindBtn.Location = new System.Drawing.Point(889, 134);
+            this.FindBtn.Location = new System.Drawing.Point(889, 127);
             this.FindBtn.Name = "FindBtn";
-            this.FindBtn.Size = new System.Drawing.Size(104, 44);
+            this.FindBtn.Size = new System.Drawing.Size(104, 51);
             this.FindBtn.TabIndex = 70;
             this.FindBtn.Text = "Tìm Kiếm";
             this.FindBtn.UseVisualStyleBackColor = false;
@@ -321,6 +336,7 @@
             this.label6.Size = new System.Drawing.Size(77, 21);
             this.label6.TabIndex = 65;
             this.label6.Text = "Tìm kiếm:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // TenHS_Tbox
             // 
@@ -328,6 +344,7 @@
             this.TenHS_Tbox.Name = "TenHS_Tbox";
             this.TenHS_Tbox.Size = new System.Drawing.Size(258, 20);
             this.TenHS_Tbox.TabIndex = 61;
+            this.TenHS_Tbox.TextChanged += new System.EventHandler(this.TenHS_Tbox_TextChanged);
             // 
             // StudentScore
             // 

@@ -75,6 +75,12 @@
     <Compile Include="Schedule.Designer.cs">
       <DependentUpon>Schedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRecords.Designer.cs">
+      <DependentUpon>StudentRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Schedule.resx">
       <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRecords.resx">
+      <DependentUpon>StudentRecords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherScore.resx">
       <DependentUpon>TeacherScore.cs</DependentUpon>
@@ -140,15 +149,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="School ahh Record.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="School ahh Record_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>School ahh Record.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
