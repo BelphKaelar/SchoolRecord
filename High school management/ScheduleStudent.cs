@@ -15,19 +15,12 @@ namespace High_school_management
     {
         public ScheduleStudent()
         {
-            InitializeComponent();
-            if(Login.Role == "Student")
-            {
-                DSDiem_Lb.Enabled = true;
-                Lich_Lb.Enabled = false;
-                DSHS_Lb.Enabled = false;
-            }
+            InitializeComponent(); 
             TKBGridView.ClearSelection();
         }
-
         int key = 0;
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\Database1.mdf"";Integrated Security=True");
-        
+
         private void DisplayTKB(DateTime selectedDate)
         {
             string Query = "SELECT Tiet, Thu2, Thu3, Thu4, Thu5, Thu6, Thu7, CN FROM StudentTimeTb WHERE Ngay = @Ngay";
@@ -36,37 +29,17 @@ namespace High_school_management
             SqlCommandBuilder builder = new SqlCommandBuilder(SDA);
             var ds = new DataSet();
             SDA.Fill(ds);
-            TKBGridView.DataSource = ds.Tables[0]; 
+            TKBGridView.DataSource = ds.Tables[0];
+        }
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime selectedDate = dateTimePicker1.Value.Date;
+            DisplayTKB(selectedDate);
         }
 
-        private void GetDate()
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Con.Open();
-            SqlCommand cmd = new SqlCommand("Select Ngay from TeacherTimeTb", Con);
-            SqlDataReader dr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            while (dr.Read())
-            {
-                // Lấy giá trị ngày từ cột Ngay của dòng đầu tiên
-                DateTime ngay = Convert.ToDateTime(dr["Ngay"]);
-
-                // Gán giá trị ngày cho DateTimePicker
-                dateTimePicker1.Value = ngay;
-            }
-            Con.Close();
-        }
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Menu obj = new Menu();
-            obj.Show();
-            this.Show();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            Login obj = new Login();
-            obj.Show();
-            this.Hide();
+            Application.Exit();
         }
 
         private void DSDiem_Lb_Click(object sender, EventArgs e)
@@ -76,15 +49,18 @@ namespace High_school_management
             this.Hide();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            DateTime selectedDate = dateTimePicker1.Value.Date;
-            DisplayTKB(selectedDate);
+            Menu obj = new Menu();
+            obj.Show();
+            this.Hide();
         }
     }
 }

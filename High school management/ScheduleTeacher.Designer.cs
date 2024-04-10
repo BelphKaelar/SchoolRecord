@@ -68,6 +68,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(892, 585);
             this.panel2.TabIndex = 13;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dateTimePicker1
             // 
@@ -81,11 +82,12 @@
             // 
             this.TKBGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TKBGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TKBGridView.Location = new System.Drawing.Point(9, 165);
+            this.TKBGridView.Location = new System.Drawing.Point(9, 129);
             this.TKBGridView.Name = "TKBGridView";
             this.TKBGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TKBGridView.Size = new System.Drawing.Size(875, 408);
+            this.TKBGridView.Size = new System.Drawing.Size(875, 444);
             this.TKBGridView.TabIndex = 73;
+            this.TKBGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TKBGridView_CellContentClick);
             // 
             // label2
             // 
@@ -98,6 +100,7 @@
             this.label2.Size = new System.Drawing.Size(346, 54);
             this.label2.TabIndex = 66;
             this.label2.Text = "THỜI KHÓA BIỂU";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -129,6 +132,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 585);
             this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -141,6 +145,7 @@
             this.label1.Size = new System.Drawing.Size(156, 28);
             this.label1.TabIndex = 25;
             this.label1.Text = "TRƯỜNG THPT";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // DSHS_Lb
             // 
@@ -153,6 +158,7 @@
             this.DSHS_Lb.Size = new System.Drawing.Size(96, 28);
             this.DSHS_Lb.TabIndex = 22;
             this.DSHS_Lb.Text = "Học Sinh";
+            this.DSHS_Lb.Click += new System.EventHandler(this.DSHS_Lb_Click);
             // 
             // pictureBox4
             // 
@@ -164,6 +170,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -175,6 +182,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // Lich_Lb
             // 
@@ -187,6 +195,7 @@
             this.Lich_Lb.Size = new System.Drawing.Size(50, 28);
             this.Lich_Lb.TabIndex = 19;
             this.Lich_Lb.Text = "Lịch";
+            this.Lich_Lb.Click += new System.EventHandler(this.Lich_Lb_Click);
             // 
             // label5
             // 
@@ -211,6 +220,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 17;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox3
             // 
@@ -222,6 +232,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // DSDiem_Lb
             // 

@@ -46,7 +46,6 @@ C:\Users\admin\source\repos\SchoolRecord\High school management\obj\Debug\High s
 C:\Users\admin\source\repos\SchoolRecord\High school management\obj\Debug\High school management.exe
 C:\Users\admin\source\repos\SchoolRecord\High school management\obj\Debug\High school management.pdb
 C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High school management.csproj.AssemblyReference.cache
-C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.Fault.resources
 C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.ScheduleStudent.resources
 C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.ScheduleTeacher.resources
 C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.StudentRecords.resources

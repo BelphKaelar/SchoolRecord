@@ -63,7 +63,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fault.cs">
+    <Compile Include="DB.cs" />
+    <Compile Include="ScheduleStudent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ScheduleStudent.Designer.cs">

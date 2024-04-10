@@ -13,7 +13,7 @@ namespace High_school_management
 {
     public partial class Themhs : Form
     {
-        classdatabase fn =  new classdatabase();
+        DB fn =  new DB();
         string query;
         public Themhs()
         {
