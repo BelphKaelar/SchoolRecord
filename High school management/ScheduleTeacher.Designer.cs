@@ -1,6 +1,6 @@
 ﻿namespace High_school_management
 {
-    partial class Schedule
+    partial class ScheduleTeacher
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Schedule));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScheduleTeacher));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.TKBGridView = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,9 +45,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.DSDiem_Lb = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.FindBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TKBGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -58,8 +59,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.FindBtn);
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.TKBGridView);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -67,6 +68,24 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(892, 585);
             this.panel2.TabIndex = 13;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(343, 103);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 74;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // TKBGridView
+            // 
+            this.TKBGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TKBGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.TKBGridView.Location = new System.Drawing.Point(9, 165);
+            this.TKBGridView.Name = "TKBGridView";
+            this.TKBGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.TKBGridView.Size = new System.Drawing.Size(875, 408);
+            this.TKBGridView.TabIndex = 73;
             // 
             // label2
             // 
@@ -90,6 +109,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel1
             // 
@@ -179,6 +199,7 @@
             this.label5.Size = new System.Drawing.Size(130, 28);
             this.label5.TabIndex = 18;
             this.label5.Text = "ĐĂNG XUẤT";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox7
             // 
@@ -213,6 +234,7 @@
             this.DSDiem_Lb.Size = new System.Drawing.Size(62, 28);
             this.DSDiem_Lb.TabIndex = 8;
             this.DSDiem_Lb.Text = "Điểm";
+            this.DSDiem_Lb.Click += new System.EventHandler(this.DSDiem_Lb_Click);
             // 
             // pictureBox2
             // 
@@ -224,34 +246,9 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // FindBtn
-            // 
-            this.FindBtn.BackColor = System.Drawing.Color.Black;
-            this.FindBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.FindBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FindBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.FindBtn.Location = new System.Drawing.Point(15, 87);
-            this.FindBtn.Name = "FindBtn";
-            this.FindBtn.Size = new System.Drawing.Size(104, 44);
-            this.FindBtn.TabIndex = 71;
-            this.FindBtn.Text = "Hôm trước ";
-            this.FindBtn.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(776, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 44);
-            this.button1.TabIndex = 72;
-            this.button1.Text = "Hôm sau";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // Schedule
+            // ScheduleTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -259,10 +256,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Schedule";
+            this.Name = "ScheduleTeacher";
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TKBGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -291,7 +289,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label DSDiem_Lb;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button FindBtn;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView TKBGridView;
     }
 }

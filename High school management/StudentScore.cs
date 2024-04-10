@@ -29,6 +29,7 @@ namespace High_school_management
 
         int key = 0;
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\ADMINS\Source\Repos\High-School-Management1\High school management\SchoolRecord.mdf"";Integrated Security=True");
+        
         private void Clear()
         {
             TenGV_Tbox.Text = "";
@@ -118,7 +119,7 @@ namespace High_school_management
 
         private void Lich_Lb_Click(object sender, EventArgs e)
         {
-            Schedule obj = new Schedule();
+            ScheduleStudent obj = new ScheduleStudent();
             obj.Show();
             this.Hide();
         }

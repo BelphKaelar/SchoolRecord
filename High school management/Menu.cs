@@ -58,7 +58,7 @@ namespace High_school_management
 
         private void Lich_Lb_Click(object sender, EventArgs e)
         {
-            Schedule obj = new Schedule();
+            ScheduleTeacher obj = new ScheduleTeacher();
             obj.Show();
             this.Hide();
         }

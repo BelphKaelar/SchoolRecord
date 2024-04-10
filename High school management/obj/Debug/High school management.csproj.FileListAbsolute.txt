@@ -45,3 +45,23 @@ C:\Users\admin\source\repos\SchoolRecord\High school management\obj\Debug\High s
 C:\Users\admin\source\repos\SchoolRecord\High school management\obj\Debug\High school management.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\SchoolRecord\High school management\obj\Debug\High school management.exe
 C:\Users\admin\source\repos\SchoolRecord\High school management\obj\Debug\High school management.pdb
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High school management.csproj.AssemblyReference.cache
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.Fault.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.ScheduleStudent.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.ScheduleTeacher.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.StudentRecords.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.TeacherScore.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.Login.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.StudentScore.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.Menu.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.Properties.Resources.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High_school_management.Themhs.resources
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High school management.csproj.GenerateResource.cache
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High school management.csproj.CoreCompileInputs.cache
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High school management.exe
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\obj\Debug\High school management.pdb
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\bin\Debug\Database1.mdf
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\bin\Debug\Database1_log.ldf
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\bin\Debug\High school management.exe.config
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\bin\Debug\High school management.exe
+C:\Users\ADMINS\Source\Repos\SchoolRecord\High school management\bin\Debug\High school management.pdb

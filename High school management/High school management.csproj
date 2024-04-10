@@ -63,17 +63,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fault.cs">
+    <Compile Include="ScheduleStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fault.Designer.cs">
-      <DependentUpon>Fault.cs</DependentUpon>
+    <Compile Include="ScheduleStudent.Designer.cs">
+      <DependentUpon>ScheduleStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Schedule.cs">
+    <Compile Include="ScheduleTeacher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Schedule.Designer.cs">
-      <DependentUpon>Schedule.cs</DependentUpon>
+    <Compile Include="ScheduleTeacher.Designer.cs">
+      <DependentUpon>ScheduleTeacher.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentRecords.cs">
       <SubType>Form</SubType>
@@ -113,11 +113,11 @@
     <Compile Include="Themhs.Designer.cs">
       <DependentUpon>Themhs.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Fault.resx">
-      <DependentUpon>Fault.cs</DependentUpon>
+    <EmbeddedResource Include="ScheduleStudent.resx">
+      <DependentUpon>ScheduleStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Schedule.resx">
-      <DependentUpon>Schedule.cs</DependentUpon>
+    <EmbeddedResource Include="ScheduleTeacher.resx">
+      <DependentUpon>ScheduleTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentRecords.resx">
       <DependentUpon>StudentRecords.cs</DependentUpon>
@@ -170,6 +170,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

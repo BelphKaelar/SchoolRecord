@@ -117,7 +117,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Gold;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(252, 21);
+            this.label2.Location = new System.Drawing.Point(226, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(329, 54);
             this.label2.TabIndex = 66;
@@ -191,6 +191,7 @@
             this.txtthemhs.Size = new System.Drawing.Size(150, 28);
             this.txtthemhs.TabIndex = 8;
             this.txtthemhs.Text = "Thêm học sinh";
+            this.txtthemhs.Click += new System.EventHandler(this.txtthemhs_Click);
             // 
             // panel1
             // 

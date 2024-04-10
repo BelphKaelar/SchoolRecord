@@ -23,5 +23,10 @@ namespace High_school_management
             f1.Show();
             this.Hide();
         }
+
+        private void txtthemhs_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
