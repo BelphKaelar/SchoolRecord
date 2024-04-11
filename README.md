@@ -1,9 +1,13 @@
+Create a Service-Based Database inside the project
+-> Create table below
+-> Change project Sqlcon to your Con string to work
+
 CREATE TABLE [dbo].[ClassTb]
 (
 	[MaLop] INT NOT NULL PRIMARY KEY, 
     [MaGV] INT NOT NULL, 
     [TenGV] VARCHAR(50) NULL
-)
+);
 
 CREATE TABLE [dbo].[StudentScore] (
     [MaDiem]    INT          NOT NULL,
@@ -34,7 +38,7 @@ CREATE TABLE [dbo].[StudentTimeTb]
     [Thu7] VARCHAR(50) NULL, 
     [CN] VARCHAR(50) NULL, 
     [Ngay] DATE NOT NULL
-)
+);
 
 CREATE TABLE [dbo].[TeacherTimeTb]
 (
@@ -48,7 +52,7 @@ CREATE TABLE [dbo].[TeacherTimeTb]
     [Thu7] VARCHAR(50) NULL, 
     [CN] VARCHAR(50) NULL, 
     [Ngay] DATE NOT NULL
-)
+);
 
 CREATE TABLE [dbo].[Studentscord] (
     [MaHS]    INT          NOT NULL,
